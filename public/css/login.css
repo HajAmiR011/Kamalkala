@@ -1,0 +1,76 @@
+@import "./setting.css";
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.wrapper{
+    border: 2px solid rgb(226, 226, 226);
+    width: 400px;
+    height: 413px;
+    padding: 30px;
+    font-family: var(--fontfamily);
+    border-radius: 3px;
+    transition: 300ms;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+} 
+.line{
+    font-weight: bold;
+    font-size: 28px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+p{
+    font-size: 12px;
+
+    span{
+        color: rgb(7, 172, 172);
+    }
+}
+input[type=text]{
+    padding: 15px;
+    border-radius: 5px;
+    font-family: var(--fontfamily);
+    outline: none;
+    border: 1px solid cyan;  
+    margin-bottom: 5px;
+   &:focus{
+    border-color: red;
+   }
+   &:focus + .hidden{
+    display: block;
+   }
+}
+input[type=submit]{
+    padding: 15px;
+    border-radius: 5px;
+    font-family: var(--fontfamily);
+    color: white;
+    background-color: crimson;
+    outline: none;
+    border: none;
+}
+.hidden{
+    color: red;
+    display: none;
+}
+.txt{
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    margin-bottom: 15px;
+}
